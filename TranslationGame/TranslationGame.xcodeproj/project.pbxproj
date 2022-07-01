@@ -11,9 +11,32 @@
 		3591CED0286F444100651871 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CECF286F444100651871 /* SceneDelegate.swift */; };
 		3591CED7286F444200651871 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3591CED6286F444200651871 /* Assets.xcassets */; };
 		3591CEDA286F444200651871 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3591CED8286F444200651871 /* LaunchScreen.storyboard */; };
-		3591CEE5286F444200651871 /* TranslationGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CEE4286F444200651871 /* TranslationGameTests.swift */; };
 		3591CEEF286F444200651871 /* TranslationGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CEEE286F444200651871 /* TranslationGameUITests.swift */; };
 		3591CEF1286F444200651871 /* TranslationGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CEF0286F444200651871 /* TranslationGameUITestsLaunchTests.swift */; };
+		3591CEFE286F4CF700651871 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CEFD286F4CF700651871 /* Application.swift */; };
+		3591CF04286F4DD900651871 /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CF03286F4DD900651871 /* GameProtocol.swift */; };
+		3591CF06286F4DE300651871 /* LogicProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CF05286F4DE300651871 /* LogicProtocol.swift */; };
+		3591CF08286F4DEC00651871 /* LevelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CF07286F4DEC00651871 /* LevelProtocol.swift */; };
+		3591CF0A286F4DF700651871 /* PlayerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CF09286F4DF700651871 /* PlayerProtocol.swift */; };
+		3591CF0C286F4E0900651871 /* TranslationGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CF0B286F4E0900651871 /* TranslationGame.swift */; };
+		3591CF0E286F4E1200651871 /* TranslationLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CF0D286F4E1200651871 /* TranslationLogic.swift */; };
+		3591CF10286F4E1F00651871 /* TranslationLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CF0F286F4E1F00651871 /* TranslationLevel.swift */; };
+		3591CF12286F4E3300651871 /* CurrentPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CF11286F4E3300651871 /* CurrentPlayer.swift */; };
+		3591CF15286F51BB00651871 /* TranslationGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CF14286F51BB00651871 /* TranslationGameTests.swift */; };
+		3591CF17286F529B00651871 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = 3591CF16286F529B00651871 /* words.json */; };
+		3591CF18286F529B00651871 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = 3591CF16286F529B00651871 /* words.json */; };
+		3591CF1A286F534300651871 /* TranslationLogicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CF19286F534300651871 /* TranslationLogicTests.swift */; };
+		3591CF1C286F545200651871 /* TranslationLevelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CF1B286F545200651871 /* TranslationLevelTest.swift */; };
+		3591CF1E286F54ED00651871 /* CurrentPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CF1D286F54ED00651871 /* CurrentPlayerTests.swift */; };
+		3591CF21286F572D00651871 /* WordPairModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CF20286F572D00651871 /* WordPairModel.swift */; };
+		3591CF22286F572D00651871 /* WordPairModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CF20286F572D00651871 /* WordPairModel.swift */; };
+		3591CF27286F5F9D00651871 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3591CF26286F5F9D00651871 /* Localizable.strings */; };
+		3591CF28286F5F9D00651871 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3591CF26286F5F9D00651871 /* Localizable.strings */; };
+		3591CF2B286F5FD100651871 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CF2A286F5FD100651871 /* String+Extension.swift */; };
+		3591CF2C286F5FD100651871 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CF2A286F5FD100651871 /* String+Extension.swift */; };
+		B99AB4683AA756A92103E143 /* Pods_TranslationGameTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCFC0B56445581027A50169 /* Pods_TranslationGameTests.framework */; };
+		ED967EFCBC9E4F0AE638AF1C /* Pods_TranslationGame_TranslationGameUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D89712686EAD848EBDD1AF1 /* Pods_TranslationGame_TranslationGameUITests.framework */; };
+		F8A82BBEB43930EFA21E716A /* Pods_TranslationGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2856D6FDEE6B4B98F2E785B3 /* Pods_TranslationGame.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +57,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B86ABD8DF66D160669016E4 /* Pods-TranslationGame-TranslationGameUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranslationGame-TranslationGameUITests.release.xcconfig"; path = "Target Support Files/Pods-TranslationGame-TranslationGameUITests/Pods-TranslationGame-TranslationGameUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2856D6FDEE6B4B98F2E785B3 /* Pods_TranslationGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TranslationGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FCFC0B56445581027A50169 /* Pods_TranslationGameTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TranslationGameTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3591CECA286F444100651871 /* TranslationGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TranslationGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3591CECD286F444100651871 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3591CECF286F444100651871 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,10 +67,32 @@
 		3591CED9286F444200651871 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3591CEDB286F444200651871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3591CEE0286F444200651871 /* TranslationGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranslationGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3591CEE4286F444200651871 /* TranslationGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationGameTests.swift; sourceTree = "<group>"; };
 		3591CEEA286F444200651871 /* TranslationGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranslationGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3591CEEE286F444200651871 /* TranslationGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationGameUITests.swift; sourceTree = "<group>"; };
 		3591CEF0286F444200651871 /* TranslationGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3591CEFD286F4CF700651871 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		3591CF03286F4DD900651871 /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
+		3591CF05286F4DE300651871 /* LogicProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogicProtocol.swift; sourceTree = "<group>"; };
+		3591CF07286F4DEC00651871 /* LevelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelProtocol.swift; sourceTree = "<group>"; };
+		3591CF09286F4DF700651871 /* PlayerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerProtocol.swift; sourceTree = "<group>"; };
+		3591CF0B286F4E0900651871 /* TranslationGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationGame.swift; sourceTree = "<group>"; };
+		3591CF0D286F4E1200651871 /* TranslationLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationLogic.swift; sourceTree = "<group>"; };
+		3591CF0F286F4E1F00651871 /* TranslationLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationLevel.swift; sourceTree = "<group>"; };
+		3591CF11286F4E3300651871 /* CurrentPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPlayer.swift; sourceTree = "<group>"; };
+		3591CF14286F51BB00651871 /* TranslationGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationGameTests.swift; sourceTree = "<group>"; };
+		3591CF16286F529B00651871 /* words.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = words.json; sourceTree = "<group>"; };
+		3591CF19286F534300651871 /* TranslationLogicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationLogicTests.swift; sourceTree = "<group>"; };
+		3591CF1B286F545200651871 /* TranslationLevelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationLevelTest.swift; sourceTree = "<group>"; };
+		3591CF1D286F54ED00651871 /* CurrentPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPlayerTests.swift; sourceTree = "<group>"; };
+		3591CF20286F572D00651871 /* WordPairModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPairModel.swift; sourceTree = "<group>"; };
+		3591CF26286F5F9D00651871 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		3591CF2A286F5FD100651871 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		3C00450BA2901502671DBAE1 /* Pods-TranslationGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranslationGameTests.debug.xcconfig"; path = "Target Support Files/Pods-TranslationGameTests/Pods-TranslationGameTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5B3ECF437732545F54E7C356 /* Pods-TranslationGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranslationGame.release.xcconfig"; path = "Target Support Files/Pods-TranslationGame/Pods-TranslationGame.release.xcconfig"; sourceTree = "<group>"; };
+		6D89712686EAD848EBDD1AF1 /* Pods_TranslationGame_TranslationGameUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TranslationGame_TranslationGameUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74B6FC0D6B5A1FD7534CAFAC /* Pods-TranslationGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranslationGame.debug.xcconfig"; path = "Target Support Files/Pods-TranslationGame/Pods-TranslationGame.debug.xcconfig"; sourceTree = "<group>"; };
+		A50C97639FDCADD9851BD9F9 /* Pods-TranslationGame-TranslationGameUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranslationGame-TranslationGameUITests.debug.xcconfig"; path = "Target Support Files/Pods-TranslationGame-TranslationGameUITests/Pods-TranslationGame-TranslationGameUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A9FF391473471D85DC41EEB1 /* Pods-TranslationGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranslationGameTests.release.xcconfig"; path = "Target Support Files/Pods-TranslationGameTests/Pods-TranslationGameTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8A82BBEB43930EFA21E716A /* Pods_TranslationGame.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B99AB4683AA756A92103E143 /* Pods_TranslationGameTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED967EFCBC9E4F0AE638AF1C /* Pods_TranslationGame_TranslationGameUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +130,8 @@
 				3591CEE3286F444200651871 /* TranslationGameTests */,
 				3591CEED286F444200651871 /* TranslationGameUITests */,
 				3591CECB286F444100651871 /* Products */,
+				3F543101227409F44868AA85 /* Pods */,
+				B524432ACE5555E4ACFFC969 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,10 +148,13 @@
 		3591CECC286F444100651871 /* TranslationGame */ = {
 			isa = PBXGroup;
 			children = (
-				3591CECD286F444100651871 /* AppDelegate.swift */,
-				3591CECF286F444100651871 /* SceneDelegate.swift */,
+				3591CF29286F5FC600651871 /* Extensions */,
+				3591CF1F286F571E00651871 /* Models */,
+				3591CF01286F4DA400651871 /* AppLogic */,
+				3591CF02286F4DBD00651871 /* TranslationLogic */,
+				3591CF00286F4D9E00651871 /* Scenes */,
+				3591CEFF286F4D8E00651871 /* Application */,
 				3591CED6286F444200651871 /* Assets.xcassets */,
-				3591CED8286F444200651871 /* LaunchScreen.storyboard */,
 				3591CEDB286F444200651871 /* Info.plist */,
 			);
 			path = TranslationGame;
@@ -107,7 +163,7 @@
 		3591CEE3286F444200651871 /* TranslationGameTests */ = {
 			isa = PBXGroup;
 			children = (
-				3591CEE4286F444200651871 /* TranslationGameTests.swift */,
+				3591CF13286F519100651871 /* LogicTests */,
 			);
 			path = TranslationGameTests;
 			sourceTree = "<group>";
@@ -121,6 +177,98 @@
 			path = TranslationGameUITests;
 			sourceTree = "<group>";
 		};
+		3591CEFF286F4D8E00651871 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3591CF16286F529B00651871 /* words.json */,
+				3591CECD286F444100651871 /* AppDelegate.swift */,
+				3591CECF286F444100651871 /* SceneDelegate.swift */,
+				3591CED8286F444200651871 /* LaunchScreen.storyboard */,
+				3591CEFD286F4CF700651871 /* Application.swift */,
+				3591CF26286F5F9D00651871 /* Localizable.strings */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		3591CF00286F4D9E00651871 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3591CF01286F4DA400651871 /* AppLogic */ = {
+			isa = PBXGroup;
+			children = (
+				3591CF03286F4DD900651871 /* GameProtocol.swift */,
+				3591CF05286F4DE300651871 /* LogicProtocol.swift */,
+				3591CF07286F4DEC00651871 /* LevelProtocol.swift */,
+				3591CF09286F4DF700651871 /* PlayerProtocol.swift */,
+			);
+			path = AppLogic;
+			sourceTree = "<group>";
+		};
+		3591CF02286F4DBD00651871 /* TranslationLogic */ = {
+			isa = PBXGroup;
+			children = (
+				3591CF0B286F4E0900651871 /* TranslationGame.swift */,
+				3591CF0D286F4E1200651871 /* TranslationLogic.swift */,
+				3591CF0F286F4E1F00651871 /* TranslationLevel.swift */,
+				3591CF11286F4E3300651871 /* CurrentPlayer.swift */,
+			);
+			path = TranslationLogic;
+			sourceTree = "<group>";
+		};
+		3591CF13286F519100651871 /* LogicTests */ = {
+			isa = PBXGroup;
+			children = (
+				3591CF14286F51BB00651871 /* TranslationGameTests.swift */,
+				3591CF19286F534300651871 /* TranslationLogicTests.swift */,
+				3591CF1B286F545200651871 /* TranslationLevelTest.swift */,
+				3591CF1D286F54ED00651871 /* CurrentPlayerTests.swift */,
+			);
+			path = LogicTests;
+			sourceTree = "<group>";
+		};
+		3591CF1F286F571E00651871 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3591CF20286F572D00651871 /* WordPairModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3591CF29286F5FC600651871 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3591CF2A286F5FD100651871 /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3F543101227409F44868AA85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74B6FC0D6B5A1FD7534CAFAC /* Pods-TranslationGame.debug.xcconfig */,
+				5B3ECF437732545F54E7C356 /* Pods-TranslationGame.release.xcconfig */,
+				A50C97639FDCADD9851BD9F9 /* Pods-TranslationGame-TranslationGameUITests.debug.xcconfig */,
+				1B86ABD8DF66D160669016E4 /* Pods-TranslationGame-TranslationGameUITests.release.xcconfig */,
+				3C00450BA2901502671DBAE1 /* Pods-TranslationGameTests.debug.xcconfig */,
+				A9FF391473471D85DC41EEB1 /* Pods-TranslationGameTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B524432ACE5555E4ACFFC969 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2856D6FDEE6B4B98F2E785B3 /* Pods_TranslationGame.framework */,
+				6D89712686EAD848EBDD1AF1 /* Pods_TranslationGame_TranslationGameUITests.framework */,
+				2FCFC0B56445581027A50169 /* Pods_TranslationGameTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,9 +276,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3591CEF4286F444200651871 /* Build configuration list for PBXNativeTarget "TranslationGame" */;
 			buildPhases = (
+				823515846282FA3FDEDC53A8 /* [CP] Check Pods Manifest.lock */,
 				3591CEC6286F444100651871 /* Sources */,
 				3591CEC7286F444100651871 /* Frameworks */,
 				3591CEC8286F444100651871 /* Resources */,
+				6901B55F4E9F1FE1EC497097 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,9 +295,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3591CEF7286F444200651871 /* Build configuration list for PBXNativeTarget "TranslationGameTests" */;
 			buildPhases = (
+				665B2FB3B6FFD28D43001DDB /* [CP] Check Pods Manifest.lock */,
 				3591CEDC286F444200651871 /* Sources */,
 				3591CEDD286F444200651871 /* Frameworks */,
 				3591CEDE286F444200651871 /* Resources */,
+				37E1F6286F0FC195028BBC25 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,9 +315,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3591CEFA286F444200651871 /* Build configuration list for PBXNativeTarget "TranslationGameUITests" */;
 			buildPhases = (
+				727548F8A154D82919946C03 /* [CP] Check Pods Manifest.lock */,
 				3591CEE6286F444200651871 /* Sources */,
 				3591CEE7286F444200651871 /* Frameworks */,
 				3591CEE8286F444200651871 /* Resources */,
+				FE9EFF61B2703E79794DAC3A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -225,6 +379,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3591CF17286F529B00651871 /* words.json in Resources */,
+				3591CF27286F5F9D00651871 /* Localizable.strings in Resources */,
 				3591CEDA286F444200651871 /* LaunchScreen.storyboard in Resources */,
 				3591CED7286F444200651871 /* Assets.xcassets in Resources */,
 			);
@@ -234,6 +390,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3591CF18286F529B00651871 /* words.json in Resources */,
+				3591CF28286F5F9D00651871 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,13 +404,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		37E1F6286F0FC195028BBC25 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TranslationGameTests/Pods-TranslationGameTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TranslationGameTests/Pods-TranslationGameTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TranslationGameTests/Pods-TranslationGameTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		665B2FB3B6FFD28D43001DDB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TranslationGameTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6901B55F4E9F1FE1EC497097 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TranslationGame/Pods-TranslationGame-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TranslationGame/Pods-TranslationGame-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TranslationGame/Pods-TranslationGame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		727548F8A154D82919946C03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TranslationGame-TranslationGameUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		823515846282FA3FDEDC53A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TranslationGame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE9EFF61B2703E79794DAC3A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TranslationGame-TranslationGameUITests/Pods-TranslationGame-TranslationGameUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TranslationGame-TranslationGameUITests/Pods-TranslationGame-TranslationGameUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TranslationGame-TranslationGameUITests/Pods-TranslationGame-TranslationGameUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3591CEC6286F444100651871 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3591CF10286F4E1F00651871 /* TranslationLevel.swift in Sources */,
+				3591CF0A286F4DF700651871 /* PlayerProtocol.swift in Sources */,
+				3591CF0C286F4E0900651871 /* TranslationGame.swift in Sources */,
+				3591CF0E286F4E1200651871 /* TranslationLogic.swift in Sources */,
+				3591CEFE286F4CF700651871 /* Application.swift in Sources */,
+				3591CF04286F4DD900651871 /* GameProtocol.swift in Sources */,
+				3591CF2B286F5FD100651871 /* String+Extension.swift in Sources */,
+				3591CF12286F4E3300651871 /* CurrentPlayer.swift in Sources */,
+				3591CF21286F572D00651871 /* WordPairModel.swift in Sources */,
+				3591CF08286F4DEC00651871 /* LevelProtocol.swift in Sources */,
 				3591CECE286F444100651871 /* AppDelegate.swift in Sources */,
 				3591CED0286F444100651871 /* SceneDelegate.swift in Sources */,
+				3591CF06286F4DE300651871 /* LogicProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +549,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3591CEE5286F444200651871 /* TranslationGameTests.swift in Sources */,
+				3591CF22286F572D00651871 /* WordPairModel.swift in Sources */,
+				3591CF1A286F534300651871 /* TranslationLogicTests.swift in Sources */,
+				3591CF1C286F545200651871 /* TranslationLevelTest.swift in Sources */,
+				3591CF1E286F54ED00651871 /* CurrentPlayerTests.swift in Sources */,
+				3591CF2C286F5FD100651871 /* String+Extension.swift in Sources */,
+				3591CF15286F51BB00651871 /* TranslationGameTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +710,7 @@
 		};
 		3591CEF5286F444200651871 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74B6FC0D6B5A1FD7534CAFAC /* Pods-TranslationGame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -444,6 +739,7 @@
 		};
 		3591CEF6286F444200651871 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B3ECF437732545F54E7C356 /* Pods-TranslationGame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -472,6 +768,7 @@
 		};
 		3591CEF8286F444200651871 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C00450BA2901502671DBAE1 /* Pods-TranslationGameTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -492,6 +789,7 @@
 		};
 		3591CEF9286F444200651871 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9FF391473471D85DC41EEB1 /* Pods-TranslationGameTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +810,7 @@
 		};
 		3591CEFB286F444200651871 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A50C97639FDCADD9851BD9F9 /* Pods-TranslationGame-TranslationGameUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +829,7 @@
 		};
 		3591CEFC286F444200651871 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B86ABD8DF66D160669016E4 /* Pods-TranslationGame-TranslationGameUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,24 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '15.0'
+
+target 'TranslationGame' do
+  use_frameworks!
+    pod 'RxSwift'
+    pod 'RxCocoa'
+    pod 'SnapKit'
+
+  # Pods for TranslationGame
+
+  target 'TranslationGameTests' do
+    inherit! :search_paths
+    # Pods for testing
+    pod 'RxSwift'
+    pod 'RxCocoa'
+    pod 'SnapKit'
+  end
+
+  target 'TranslationGameUITests' do
+    # Pods for testing
+  end
+
+end
