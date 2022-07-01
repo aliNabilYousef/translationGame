@@ -49,3 +49,33 @@ Testing:
 I will not be using any 3rd party library for unit tests, instead I will be relying on the native XCTest platform provided by Apple.
 
 This should give enough insight to how I will be tackling the development. 
+
+-----------------------------------------------------------------------------------
+
+Ending Notes:
+-------------
+It was really fun working on this assignment
+
+I know the requirements said to animate the Spanish word, but I added a bit of text to it to make it look nicer, so I chose to animate the english word instead.
+
+The architecture is almost intact, I modified the functions a bit, but it is still there.
+
+
+Time:
+-----
+It took me around 6 hours for the whole thing
+1:00 hours Ideating, setting the architecture, and drawing the diagram
+2:00 hours implementing the diagram (TDD)
+1:00 hour creating the UI
+1:00 hour 2nd and 3rd milestore
+1:00 hour testing + double checking unit tests
+
+Decisions:
+----------
+
+I personally prefer to have the timer display as a circle filling up, but due to time constraints i stuck to a label.
+That would be the first thing I revisit!
+
+I would definitely revisit the design, adjusting the fonts and the general layout.
+
+Looking forward to hearing from you.
