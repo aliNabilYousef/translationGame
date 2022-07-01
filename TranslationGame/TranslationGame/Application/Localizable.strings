@@ -5,6 +5,8 @@
   Created by Ali Youssef on 01/07/2022.
   
 */
-"translation for" = "is the translation correct for: %@";
+"translation for" = "Is the translation correct for: %@";
 "correct" = "Correct";
-"Wrong" = "Wrong";
+"wrong" = "Wrong";
+"correct attempts" = "Correct attempts: %d";
+"wrong attempts" = "Wrong attempts: %d";

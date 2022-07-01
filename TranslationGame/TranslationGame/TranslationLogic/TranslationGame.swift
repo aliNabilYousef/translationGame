@@ -13,7 +13,7 @@ class TranslationGame: GameProtocol {
     
     var gameLogic: LogicProtocol?
     var numberOfCorrect: BehaviorRelay<Int> = BehaviorRelay<Int>(value: 0)
-    var numberOfIncorrect: BehaviorRelay<Int> = BehaviorRelay<Int>(value: 0)
+    var numberOfWrong: BehaviorRelay<Int> = BehaviorRelay<Int>(value: 0)
     
     init(translationLogic: LogicProtocol) {
         self.gameLogic = translationLogic
@@ -22,7 +22,7 @@ class TranslationGame: GameProtocol {
     
     func resetGame() {
         numberOfCorrect.accept(0)
-        numberOfIncorrect.accept(0)
+        numberOfWrong.accept(0)
         gameLogic?.resetGameData()
     }
     
@@ -34,12 +34,12 @@ class TranslationGame: GameProtocol {
     func verifyLevel(with level: LevelProtocol) {
         let verification: Bool = gameLogic?.isRight(level: level) ?? false
         let correctCounter = numberOfCorrect.value
-        let incorrectCounter = numberOfIncorrect.value
+        let incorrectCounter = numberOfWrong.value
         
         if verification {
             numberOfCorrect.accept(correctCounter + 1)
         } else {
-            numberOfIncorrect.accept(incorrectCounter + 1)
+            numberOfWrong.accept(incorrectCounter + 1)
         }
     }
     

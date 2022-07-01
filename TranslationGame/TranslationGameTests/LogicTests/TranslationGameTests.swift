@@ -17,7 +17,7 @@ class TranslationGameTests: XCTestCase {
     
     func test_verify_level() {
         XCTAssertEqual(translationGame.numberOfCorrect.value, 0)
-        XCTAssertEqual(translationGame.numberOfIncorrect.value, 0)
+        XCTAssertEqual(translationGame.numberOfWrong.value, 0)
         
         //testing correct incrementation
         var level = TranslationLevel(question: correctTranslationEnglish, options: [correctTranslationSpanish])
@@ -29,22 +29,22 @@ class TranslationGameTests: XCTestCase {
         var level1 = TranslationLevel(question: correctTranslationEnglish, options: [correctTranslationSpanish])
         level1.selectAnswer(number: 1)
         translationGame.verifyLevel(with: level1)
-        XCTAssertEqual(translationGame.numberOfIncorrect.value, 1)
+        XCTAssertEqual(translationGame.numberOfWrong.value, 1)
     }
     
     func test_reset_game() {
         XCTAssertEqual(translationGame.numberOfCorrect.value, 0)
-        XCTAssertEqual(translationGame.numberOfIncorrect.value, 0)
+        XCTAssertEqual(translationGame.numberOfWrong.value, 0)
         
         translationGame.numberOfCorrect.accept(1)
-        translationGame.numberOfIncorrect.accept(1)
+        translationGame.numberOfWrong.accept(1)
         
         XCTAssertEqual(translationGame.numberOfCorrect.value, 1)
-        XCTAssertEqual(translationGame.numberOfIncorrect.value, 1)
+        XCTAssertEqual(translationGame.numberOfWrong.value, 1)
         
         translationGame.resetGame()
         XCTAssertEqual(translationGame.numberOfCorrect.value, 0)
-        XCTAssertEqual(translationGame.numberOfIncorrect.value, 0)
+        XCTAssertEqual(translationGame.numberOfWrong.value, 0)
         
     }
     

@@ -16,5 +16,5 @@ protocol GameProtocol {
     func gameOver()
     var gameLogic: LogicProtocol? { get set }
     var numberOfCorrect: BehaviorRelay<Int> { get set }
-    var numberOfIncorrect: BehaviorRelay<Int> { get set }
+    var numberOfWrong: BehaviorRelay<Int> { get set }
 }
