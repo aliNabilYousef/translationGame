@@ -33,6 +33,7 @@ class GameViewModel: GameViewModelProtocol {
     //MARK: Class variables
     private var currentLevel = BehaviorRelay<LevelProtocol?>(value: nil)
     private let disposeBag = DisposeBag()
+    private var timer: Timer!
     
     init(with game: GameProtocol?) {
         self.game = game
@@ -46,7 +47,24 @@ class GameViewModel: GameViewModelProtocol {
             answers.accept(level?.answers ?? [])
         }.disposed(by: disposeBag)
         
+        wrongCounter.asDriver().drive {[unowned self] wrongCtr in
+            if wrongCtr >= 3 {
+                game?.gameOver()
+            }
+        }.disposed(by: disposeBag)
+        
+        correctCounter.asDriver().drive {[unowned self] correctCtr in
+            if correctCtr >= 15 {
+                game?.gameOver()
+            }
+        }.disposed(by: disposeBag)
+        
         getNextLevel()
+        setTimer()
+    }
+    
+    func setTimer() {
+        timer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(timedOut), userInfo: nil, repeats: true)
     }
     
     //MARK: logic functions
@@ -56,7 +74,15 @@ class GameViewModel: GameViewModelProtocol {
     
     func selectAnswer(index: Int) {
         guard var level = currentLevel.value else { return }
+        timer.invalidate()
+        setTimer()
         level.selectAnswer(number: index)
+        game?.verifyLevel(with: level)
+        getNextLevel()
+    }
+    
+    @objc private func timedOut() {
+        guard let level = currentLevel.value else { return }
         game?.verifyLevel(with: level)
         getNextLevel()
     }

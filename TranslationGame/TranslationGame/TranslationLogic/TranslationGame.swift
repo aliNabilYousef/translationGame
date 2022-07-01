@@ -45,7 +45,7 @@ class TranslationGame: GameProtocol {
     
     func gameOver() {
         //kill the app
-        fatalError()
+        exit(0)
     }
     
 }
