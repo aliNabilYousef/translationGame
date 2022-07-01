@@ -35,13 +35,14 @@
 		3591CF2B286F5FD100651871 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CF2A286F5FD100651871 /* String+Extension.swift */; };
 		3591CF2C286F5FD100651871 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CF2A286F5FD100651871 /* String+Extension.swift */; };
 		3591CF2E286F6EF000651871 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CF2D286F6EF000651871 /* GameViewController.swift */; };
-		3591CF2F286F6EF000651871 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CF2D286F6EF000651871 /* GameViewController.swift */; };
 		3591CF31286F6EF900651871 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CF30286F6EF900651871 /* GameViewModel.swift */; };
-		3591CF32286F6EF900651871 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CF30286F6EF900651871 /* GameViewModel.swift */; };
 		3591CF36286F73C400651871 /* Dimens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CF35286F73C400651871 /* Dimens.swift */; };
 		3591CF37286F73C400651871 /* Dimens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CF35286F73C400651871 /* Dimens.swift */; };
 		3591CF39286F7C7B00651871 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CF38286F7C7B00651871 /* Colors.swift */; };
 		3591CF3A286F7C7B00651871 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CF38286F7C7B00651871 /* Colors.swift */; };
+		3591CF41286FA2B200651871 /* MockTranslationGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CF3F286FA2B200651871 /* MockTranslationGame.swift */; };
+		3591CF44286FA2C200651871 /* MockTranslationLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CF42286FA2C200651871 /* MockTranslationLogic.swift */; };
+		3591CF46286FA2F200651871 /* GameViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591CF45286FA2F200651871 /* GameViewModelTests.swift */; };
 		B99AB4683AA756A92103E143 /* Pods_TranslationGameTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCFC0B56445581027A50169 /* Pods_TranslationGameTests.framework */; };
 		ED967EFCBC9E4F0AE638AF1C /* Pods_TranslationGame_TranslationGameUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D89712686EAD848EBDD1AF1 /* Pods_TranslationGame_TranslationGameUITests.framework */; };
 		F8A82BBEB43930EFA21E716A /* Pods_TranslationGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2856D6FDEE6B4B98F2E785B3 /* Pods_TranslationGame.framework */; };
@@ -99,6 +100,9 @@
 		3591CF30286F6EF900651871 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		3591CF35286F73C400651871 /* Dimens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimens.swift; sourceTree = "<group>"; };
 		3591CF38286F7C7B00651871 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		3591CF3F286FA2B200651871 /* MockTranslationGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTranslationGame.swift; sourceTree = "<group>"; };
+		3591CF42286FA2C200651871 /* MockTranslationLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTranslationLogic.swift; sourceTree = "<group>"; };
+		3591CF45286FA2F200651871 /* GameViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModelTests.swift; sourceTree = "<group>"; };
 		3C00450BA2901502671DBAE1 /* Pods-TranslationGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranslationGameTests.debug.xcconfig"; path = "Target Support Files/Pods-TranslationGameTests/Pods-TranslationGameTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5B3ECF437732545F54E7C356 /* Pods-TranslationGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranslationGame.release.xcconfig"; path = "Target Support Files/Pods-TranslationGame/Pods-TranslationGame.release.xcconfig"; sourceTree = "<group>"; };
 		6D89712686EAD848EBDD1AF1 /* Pods_TranslationGame_TranslationGameUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TranslationGame_TranslationGameUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +180,7 @@
 		3591CEE3286F444200651871 /* TranslationGameTests */ = {
 			isa = PBXGroup;
 			children = (
+				3591CF3E286FA29A00651871 /* ScenesTest */,
 				3591CF13286F519100651871 /* LogicTests */,
 			);
 			path = TranslationGameTests;
@@ -268,6 +273,16 @@
 				3591CF38286F7C7B00651871 /* Colors.swift */,
 			);
 			path = GlobalValues;
+			sourceTree = "<group>";
+		};
+		3591CF3E286FA29A00651871 /* ScenesTest */ = {
+			isa = PBXGroup;
+			children = (
+				3591CF3F286FA2B200651871 /* MockTranslationGame.swift */,
+				3591CF42286FA2C200651871 /* MockTranslationLogic.swift */,
+				3591CF45286FA2F200651871 /* GameViewModelTests.swift */,
+			);
+			path = ScenesTest;
 			sourceTree = "<group>";
 		};
 		3F543101227409F44868AA85 /* Pods */ = {
@@ -577,15 +592,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3591CF2F286F6EF000651871 /* GameViewController.swift in Sources */,
 				3591CF3A286F7C7B00651871 /* Colors.swift in Sources */,
 				3591CF22286F572D00651871 /* WordPairModel.swift in Sources */,
 				3591CF1A286F534300651871 /* TranslationLogicTests.swift in Sources */,
 				3591CF37286F73C400651871 /* Dimens.swift in Sources */,
 				3591CF1C286F545200651871 /* TranslationLevelTest.swift in Sources */,
-				3591CF32286F6EF900651871 /* GameViewModel.swift in Sources */,
+				3591CF46286FA2F200651871 /* GameViewModelTests.swift in Sources */,
 				3591CF1E286F54ED00651871 /* CurrentPlayerTests.swift in Sources */,
+				3591CF44286FA2C200651871 /* MockTranslationLogic.swift in Sources */,
 				3591CF2C286F5FD100651871 /* String+Extension.swift in Sources */,
+				3591CF41286FA2B200651871 /* MockTranslationGame.swift in Sources */,
 				3591CF15286F51BB00651871 /* TranslationGameTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

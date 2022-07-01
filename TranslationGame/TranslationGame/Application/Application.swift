@@ -12,6 +12,7 @@ final class Application {
     static let shared = Application()
     private let translationLogic: LogicProtocol
     private let translationGame: GameProtocol
+    private var window: UIWindow?
     //The only reason for this initializer to is to make it private, however it can be used to feed data to the app
     private init() {
         translationLogic = TranslationLogic()
@@ -24,5 +25,15 @@ final class Application {
         vc.bindToViewModel(viewModel: vm)
         window?.rootViewController = vc
         window?.makeKeyAndVisible()
+        self.window = window
+    }
+    
+    func showFinishAlert(title: String, message: String, onReset: ((UIAlertAction) -> ())?, onQuit: ((UIAlertAction) -> ())?) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let quitButton = UIAlertAction(title: "quit".localized, style: .destructive, handler: onQuit)
+        let resetButton = UIAlertAction(title: "reset".localized, style: .default, handler: onReset)
+        alert.addAction(quitButton)
+        alert.addAction(resetButton)
+        window?.rootViewController?.present(alert, animated: true)
     }
 }

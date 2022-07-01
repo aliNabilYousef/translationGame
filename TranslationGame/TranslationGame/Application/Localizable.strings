@@ -10,3 +10,10 @@
 "wrong" = "Wrong";
 "correct attempts" = "Correct attempts: %d";
 "wrong attempts" = "Wrong attempts: %d";
+"game over" = "Game Over";
+"good job" = "Good Job!";
+"success message" = "Looks like you mastered the Spanish language. Would you like to reset or quit.";
+"failed message" = "Looks like you need more practice. Would you like to reset or quit. Remember winners never quit!";
+"reset" = "Reset";
+"quit" = "Quit";
+"time remaining" = "Time remaining: %d";

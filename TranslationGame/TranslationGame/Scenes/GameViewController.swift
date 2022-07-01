@@ -47,7 +47,7 @@ class GameViewController: UIViewController, GameViewControllerProtocol {
     private let firstLanguageWordLabel: UILabel = {
         let label = UILabel()
         label.textColor = .black
-        label.font = UIFont.boldSystemFont(ofSize: 12)
+        label.font = UIFont.boldSystemFont(ofSize: 16)
         label.textAlignment = .center
         label.numberOfLines = 0
         return label
@@ -59,6 +59,14 @@ class GameViewController: UIViewController, GameViewControllerProtocol {
         stackView.distribution = .fillEqually
         stackView.spacing = Dimens.narrowPadding
         return stackView
+    }()
+    
+    private let countDownLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .black
+        label.font = UIFont.systemFont(ofSize: 12)
+        label.numberOfLines = 1
+        return label
     }()
     
     //MARK: Class variables
@@ -81,10 +89,23 @@ class GameViewController: UIViewController, GameViewControllerProtocol {
         
         viewModel.secondWord.asDriver().drive {[unowned self] secondWordText in
             secondLanguageWordLabel.text = String.localized("translation for", with: secondWordText)
+            animateFirstWord()
         }.disposed(by: disposeBag)
         
         viewModel.answers.asDriver().drive {[unowned self] answers in
             setupStackView(answers: answers)
+        }.disposed(by: disposeBag)
+        
+        viewModel.previousAnswerState.asDriver().skip(1).drive {[unowned self] answerState in
+            if answerState {
+                successFlicker()
+            } else {
+                failureFlicker()
+            }
+        }.disposed(by: disposeBag)
+        
+        viewModel.countDownValue.asDriver().drive {[unowned self] countValue in
+            countDownLabel.text = String.localized("time remaining", with: countValue)
         }.disposed(by: disposeBag)
         
         setupViews()
@@ -94,6 +115,7 @@ class GameViewController: UIViewController, GameViewControllerProtocol {
         view.backgroundColor = .white
         view.addSubview(correctCounterLabel)
         view.addSubview(wrongCounterLabel)
+        view.addSubview(countDownLabel)
         view.addSubview(firstLanguageWordLabel)
         view.addSubview(secondLanguageWordLabel)
         view.addSubview(answersStackView)
@@ -109,6 +131,11 @@ class GameViewController: UIViewController, GameViewControllerProtocol {
         wrongCounterLabel.snp.makeConstraints { make in
             make.trailing.equalTo(correctCounterLabel.snp.trailing)
             make.top.equalTo(correctCounterLabel.snp.bottom).offset(Dimens.narrowPadding)
+        }
+        
+        countDownLabel.snp.makeConstraints { make in
+            make.trailing.equalTo(correctCounterLabel.snp.trailing)
+            make.top.equalTo(wrongCounterLabel.snp.bottom).offset(Dimens.narrowPadding)
         }
         
         secondLanguageWordLabel.snp.makeConstraints { make in
@@ -135,7 +162,7 @@ class GameViewController: UIViewController, GameViewControllerProtocol {
         super.viewDidLoad()
     }
     
-    func setupStackView(answers: [String]) {
+    private func setupStackView(answers: [String]) {
         for subView in answersStackView.arrangedSubviews {
             subView.removeFromSuperview()
         }
@@ -154,5 +181,26 @@ class GameViewController: UIViewController, GameViewControllerProtocol {
             }.disposed(by: disposeBag)
             answersStackView.addArrangedSubview(button)
         }
+    }
+    
+    private func successFlicker() {
+        view.backgroundColor = Colors.correctColor
+        UIView.animate(withDuration: 1, animations: {[weak self] in
+            self?.view.backgroundColor = .white
+        })
+    }
+    
+    private func failureFlicker() {
+        view.backgroundColor = Colors.wrongColor
+        UIView.animate(withDuration: 1, animations: {[weak self] in
+            self?.view.backgroundColor = .white
+        })
+    }
+    
+    func animateFirstWord() {
+        self.firstLanguageWordLabel.transform = CGAffineTransform(translationX: 0, y: -UIScreen.main.bounds.height/2)
+        UIView.animate(withDuration: viewModel?.game?.timeInterval ?? 5, animations: {[weak self] in
+            self?.firstLanguageWordLabel.transform = CGAffineTransform(translationX: 0, y: UIScreen.main.bounds.height/2)
+        })
     }
 }
